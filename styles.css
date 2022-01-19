@@ -153,17 +153,16 @@ a {
 
 .conocimientos {
   width: 70vw;
-  margin:20px;
+  margin: 20px;
 }
 
 .conocimiento {
   width: 20vw;
   color: rgba(63, 59, 59, 1);
   font-size: 10em;
-  display:flex;
+  display: flex;
   justify-content: center;
   padding: 30px;
-
 }
 
 .conocimiento i:hover {
@@ -281,12 +280,12 @@ a {
   padding: 50px;
 }
 
-.name-lastname-form {
+.form-controls {
   display: flex;
   justify-content: space-between;
 }
 
-.name-lastname-form input {
+.form-controls input {
   width: 15vw;
 }
 
@@ -306,7 +305,7 @@ a {
   transition: 0.2s;
   outline: none;
 }
-.name-lastname-form .name-form input:hover {
+.form-controls .name-form input:hover {
   box-shadow: 0px 0px 11px 1px #df4362;
   transition: 0.2s;
   outline: none;
@@ -361,7 +360,7 @@ a {
 
 /* Comienza footer */
 
-.pie {
+.footer-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -371,7 +370,7 @@ a {
   padding: 50px;
 }
 
-.barra-fin ul li {
+.foot-items ul li {
   display: inline;
 }
 
@@ -392,23 +391,76 @@ span {
   color: white;
 }
 
-.barra-fin .btn a {
+.foot-items .btn a {
   color: white;
   text-decoration: none;
 }
 
-.barra-fin .btn:hover a {
+.foot-items .btn:hover a {
   border-radius: 20px;
   color: #ed6480;
 }
 
 /* Media Query */
+
+@media (max-width: 898px) {
+  .imagen img {
+    display: none;
+  }
+}
 @media (max-width: 749px) {
   .navbar {
     display: none;
   }
+
+  .head-container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conocimientos {
+    width: 90vw;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+
+  .conocimiento {
+    width: 140px;
+    font-size: 5em;
+  }
+
+  .form-controls {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-controls .name-form input {
+    width: 100%;
+  }
+
+  .foot-items {
+    display: none;
+  }
+  .contact,
+  .write {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact h3,
+  .write h3 {
+    font-size: 1.4em;
+  }
+
+  .form-wrapper .formulario {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-@media (max-width: 375px) {
+
+@media (max-width: 480px) {
   body {
     overflow-x: hidden;
   }
@@ -417,33 +469,13 @@ span {
     display: none;
   }
 
-  .head-container {
-    padding: 0;
-    flex-wrap: wrap;
-  }
-
   .head-info h3,
   h2 {
     font-size: 2em;
   }
 
-  .head-info button {
-    display: none;
-  }
-
   .imagen img {
     float: right;
-  }
-
-  .conocimientos {
-    width: 90vw;
-    max-width:400px;
-    margin-top:30px;
-  }
-
-  .conocimiento {
-    width: 140px;
-    font-size:5em;
   }
 
   .main-conocimiento h3,
@@ -465,29 +497,11 @@ span {
     line-height: 120%;
   }
 
-  .contact,
-  .write {
-    width: 100%;
-    padding:20px;
-  }
-
-  .contact h3,
-  .write h3 {
-    font-size: 1.4em;
-  }
-
-
-  .form-wrapper .formulario {
-    display: flex;
-    flex-wrap: wrap;
-  
-  }
-
-  .pie {
+  .footer-wrap {
     padding: 0;
   }
 
-  .pie span {
+  .footer-wrap span {
     padding-bottom: 50px;
   }
 
@@ -497,18 +511,5 @@ span {
   .proyectos,
   .form-wrapper {
     padding-bottom: 100px;
-  }
-
-  .name-lastname-form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .name-lastname-form .name-form input {
-    width: 100%;
-  }
-
-  .barra-fin {
-   display:none;
   }
 }
