@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    #fff,
+    hsl(41, 13%, 83%),
+    hsl(76, 13%, 83%),
+    hsl(0, 13%, 83%),
+    rgb(235, 213, 213),
+    #d3dedc,
+    #fff
+  );
+}
+
+h2,
+h4 {
+  color: rgba(63, 59, 59, 1);
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 3em;
+  margin: 0px;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5em;
+  margin: 0px;
+  color: rgba(61, 31, 31, 0.459);
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+}
+
+p,
+q,
+form,
+span {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container toda la web */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+/* Barra de navegacion */
+
+.navbar {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(63, 59, 59, 1);
+  box-shadow: 0px 5px 15px -4px #000000;
+  position: sticky;
+  top: 0px;
+  padding-right: 100px;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 20px;
+}
+
+/* Botones de barra de navegacion */
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  padding: 10px;
+}
+
+.navbar .btn a {
+  color: white;
+}
+
+.btn:hover a {
+  border-radius: 20px;
+  color: #ed6480;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #ed6480;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary a {
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #df4362;
+}
+
+/* Comienza section de presentacion */
+
+.head-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+
+.head-container button {
+  padding: 10px 20px;
+}
+
+.head-info {
+  font-family: "Inter", sans-serif;
+  display: inline;
+  margin: 50px;
+}
+
+.head-info h2 {
+  color: rgba(63, 59, 59, 1);
+}
+
+.imagen img {
+  width: 80%;
+}
+
+/* Comienza section de main */
+
+.main,
+.main-conocimiento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conocimientos {
+  width: 70vw;
+  margin:20px;
+}
+
+.conocimiento {
+  width: 20vw;
+  color: rgba(63, 59, 59, 1);
+  font-size: 10em;
+  display:flex;
+  justify-content: center;
+  padding: 30px;
+
+}
+
+.conocimiento i:hover {
+  color: #df4362;
+}
+
+.conocimientos,
+.proyectos-boxes {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Comienza section de cita */
+
+.wrapper-quote,
+.proyectos {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-quote i {
+  font-size: 7em;
+  color: rgba(63, 59, 59, 1);
+  margin: 30px;
+}
+
+.wrapper-quote q {
+  width: 70vw;
+  color: black;
+  line-height: 200%;
+  background-color: rgba(255, 249, 249, 0.3);
+  border-radius: 40px;
+  padding: 30px;
+}
+
+/* clases comportamiento colectivo */
+
+.head-container,
+.main,
+.wrapper-quote,
+.proyectos,
+.form-wrapper {
+  padding-bottom: 300px;
+}
+
+/* Comienza proyectos */
+
+.proyectos div p {
+  display: flex;
+  justify-content: center;
+}
+
+.proyectos-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 80vw;
+}
+
+.cards {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px black;
+  margin: 20px;
+}
+
+.proyectos-boxes h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+
+.proyectos-boxes a {
+  color: black;
+  text-decoration: none;
+}
+
+.proyectos-boxes .item:hover a {
+  color: #df4362;
+}
+
+.proyectos-boxes .item:hover h4 {
+  font-weight: 400;
+  color: #df4362;
+}
+
+.proyectos-boxes .item:hover img {
+  border: 1px solid #df4362;
+}
+
+/* Comienza formulario */
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.formulario {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 249, 249, 0.3);
+  border-radius: 40px;
+}
+.contact,
+.write {
+  width: 40vw;
+  padding: 50px;
+}
+
+.name-lastname-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-lastname-form input {
+  width: 15vw;
+}
+
+.name-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-form textarea:hover {
+  box-shadow: 0px 0px 11px 1px #df4362;
+  transition: 0.2s;
+  outline: none;
+}
+
+.name-form input:hover {
+  box-shadow: 0px 0px 11px 1px #df4362;
+  transition: 0.2s;
+  outline: none;
+}
+.name-lastname-form .name-form input:hover {
+  box-shadow: 0px 0px 11px 1px #df4362;
+  transition: 0.2s;
+  outline: none;
+}
+
+.name-form input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+
+.name-form label {
+  padding: 10px;
+}
+
+.name-form textarea {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+
+.icon-form i {
+  font-size: 30px;
+  padding-top: 10px;
+  color: rgba(61, 31, 31, 0.459);
+  margin-right: 10px;
+}
+
+.icon-form {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9em;
+  margin: 25px;
+}
+
+.icon-form span {
+  color: black;
+}
+
+.icon-form:hover i {
+  color: #df4362;
+}
+
+.icon-form:hover span {
+  color: #df4362;
+}
+
+.write .btn-primary {
+  margin-top: 15px;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Comienza footer */
+
+.pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(63, 59, 59, 1);
+  width: 100vw;
+  padding: 50px;
+}
+
+.barra-fin ul li {
+  display: inline;
+}
+
+.foot-icon {
+  margin: 10px;
+  color: white;
+}
+
+.foot-icons-b {
+  display: inline-block;
+  font-size: 2em;
+  color: #ed6480;
+  padding: 20px;
+}
+
+.foot-icons-b:hover i,
+span {
+  color: white;
+}
+
+.barra-fin .btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.barra-fin .btn:hover a {
+  border-radius: 20px;
+  color: #ed6480;
+}
+
+/* Media Query */
+@media (max-width: 749px) {
+  .navbar {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .head-container {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .head-info h3,
+  h2 {
+    font-size: 2em;
+  }
+
+  .head-info button {
+    display: none;
+  }
+
+  .imagen img {
+    float: right;
+  }
+
+  .conocimientos {
+    width: 90vw;
+    max-width:400px;
+    margin-top:30px;
+  }
+
+  .conocimiento {
+    width: 140px;
+    font-size:5em;
+  }
+
+  .main-conocimiento h3,
+  .proyectos h3 {
+    padding-top: 20px;
+    font-size: 1.4em;
+  }
+
+  .main-conocimiento p {
+    display: none;
+  }
+
+  .wrapper-quote {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper-quote q {
+    line-height: 120%;
+  }
+
+  .contact,
+  .write {
+    width: 100%;
+    padding:20px;
+  }
+
+  .contact h3,
+  .write h3 {
+    font-size: 1.4em;
+  }
+
+
+  .form-wrapper .formulario {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+
+  .pie {
+    padding: 0;
+  }
+
+  .pie span {
+    padding-bottom: 50px;
+  }
+
+  .head-container,
+  .main,
+  .wrapper-quote,
+  .proyectos,
+  .form-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .name-lastname-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-lastname-form .name-form input {
+    width: 100%;
+  }
+
+  .barra-fin {
+   display:none;
+  }
+}
