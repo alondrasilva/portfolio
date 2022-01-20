@@ -444,6 +444,7 @@ span {
   .foot-items {
     display: none;
   }
+
   .contact,
   .write {
     width: 100%;
@@ -478,13 +479,14 @@ span {
     align-items: center;
     justify-content: center;
   }
+
   .head-info h2 {
     font-size: 2.4em;
-    color:white;
+    color: white;
   }
+
   .head-info button {
-    margin-top:20px;
- 
+    margin-top: 20px;
   }
 
   .head-info p {
@@ -500,11 +502,8 @@ span {
     width: 340px;
     height: 340px;
     border-radius: 50%;
-    background-color: rgba(63, 59, 59, .2);
-  
+    background-color: rgba(63, 59, 59, 0.2);
   }
-
-
 
   .main-conocimiento h3,
   .proyectos h3 {
