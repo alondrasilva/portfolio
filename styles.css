@@ -26,7 +26,6 @@ h4 {
 
 h2 {
   font-family: "Inter", sans-serif;
-  font-size: 3em;
   margin: 0px;
 }
 
@@ -136,6 +135,7 @@ a {
 
 .head-info h2 {
   color: rgba(63, 59, 59, 1);
+  font-size: 3em;
 }
 
 .imagen img {
@@ -209,7 +209,8 @@ a {
 .wrapper-quote,
 .proyectos,
 .form-wrapper {
-  padding-bottom: 300px;
+  padding-bottom: 150px;
+  padding-top: 150px;
 }
 
 /* Comienza proyectos */
@@ -460,7 +461,7 @@ span {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 496px) {
   body {
     overflow-x: hidden;
   }
@@ -469,14 +470,41 @@ span {
     display: none;
   }
 
-  .head-info h3,
-  h2 {
-    font-size: 2em;
+  .head-container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .head-info h2 {
+    font-size: 2.4em;
+    color:white;
+  }
+  .head-info button {
+    margin-top:20px;
+ 
   }
 
-  .imagen img {
-    float: right;
+  .head-info p {
+    display: none;
   }
+
+  .head-info {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background-color: rgba(63, 59, 59, .2);
+  
+  }
+
+
 
   .main-conocimiento h3,
   .proyectos h3 {
@@ -505,7 +533,6 @@ span {
     padding-bottom: 50px;
   }
 
-  .head-container,
   .main,
   .wrapper-quote,
   .proyectos,
