@@ -472,8 +472,8 @@ span {
   }
 
   .head-container {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
