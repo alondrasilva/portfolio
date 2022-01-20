@@ -145,18 +145,18 @@ a {
 /* Comienza section de main */
 
 .main,
-.main-conocimiento {
+.main-knowledge {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.conocimientos {
+.knowledge-items {
   width: 70vw;
   margin: 20px;
 }
 
-.conocimiento {
+.knowledges {
   width: 20vw;
   color: rgba(63, 59, 59, 1);
   font-size: 10em;
@@ -165,12 +165,12 @@ a {
   padding: 30px;
 }
 
-.conocimiento i:hover {
+.knowledges i:hover {
   color: #df4362;
 }
 
-.conocimientos,
-.proyectos-boxes {
+.knowledge-items,
+.proyect-item {
   align-items: center;
   justify-content: center;
   display: flex;
@@ -180,7 +180,7 @@ a {
 /* Comienza section de cita */
 
 .wrapper-quote,
-.proyectos {
+.proyect {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -207,20 +207,20 @@ a {
 .head-container,
 .main,
 .wrapper-quote,
-.proyectos,
+.proyect,
 .form-wrapper {
   padding-bottom: 150px;
   padding-top: 150px;
 }
 
-/* Comienza proyectos */
+/* Comienza proyect */
 
-.proyectos div p {
+.proyect div p {
   display: flex;
   justify-content: center;
 }
 
-.proyectos-boxes {
+.proyect-item {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -236,28 +236,28 @@ a {
   margin: 20px;
 }
 
-.proyectos-boxes h4 {
+.proyect-item h4 {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 100;
 }
 
-.proyectos-boxes a {
+.proyect-item a {
   color: black;
   text-decoration: none;
 }
 
-.proyectos-boxes .item:hover a {
+.proyect-item .item:hover a {
   color: #df4362;
 }
 
-.proyectos-boxes .item:hover h4 {
+.proyect-item .item:hover h4 {
   font-weight: 400;
   color: #df4362;
 }
 
-.proyectos-boxes .item:hover img {
+.proyect-item .item:hover img {
   border: 1px solid #df4362;
 }
 
@@ -421,13 +421,13 @@ span {
     align-items: center;
   }
 
-  .conocimientos {
+  .knowledge-items {
     width: 90vw;
     max-width: 400px;
     margin-top: 30px;
   }
 
-  .conocimiento {
+  .knowledges {
     width: 140px;
     font-size: 5em;
   }
@@ -467,10 +467,6 @@ span {
     overflow-x: hidden;
   }
 
-  .navbar {
-    display: none;
-  }
-
   .head-container {
     padding-top: 165px;
     padding-bottom: 220px;
@@ -482,7 +478,6 @@ span {
 
   .head-info h2 {
     font-size: 2.4em;
-  
   }
 
   .head-info button {
@@ -502,26 +497,49 @@ span {
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    box-shadow: rgba(61, 31, 31, 0.4) -5px 5px, rgba(61, 31, 31, 0.3) -10px 10px, rgba(61, 31, 31, 0.2) -15px 15px, rgba(61, 31, 31, 0.1) -20px 20px, rgba(61, 31, 31, 0.05) -25px 25px;
+    box-shadow: rgba(61, 31, 31, 0.4) -5px 5px, rgba(61, 31, 31, 0.3) -10px 10px,
+      rgba(61, 31, 31, 0.2) -15px 15px, rgba(61, 31, 31, 0.1) -20px 20px,
+      rgba(61, 31, 31, 0.05) -25px 25px;
   }
 
-  .main-conocimiento h3,
-  .proyectos h3 {
+  .knowledge-items {
+    background-color: rgba(255, 249, 249, 0.3);
+    border-radius: 40px;
+  }
+
+  .proyect .item p {
+    display: none;
+  }
+
+  .proyect .item h3 {
+    padding: 30px;
+  }
+
+  .proyect-item {
+    background-color: rgba(255, 249, 249, 0.3);
+    border-radius: 40px;
+  }
+
+  .main-knowledge h3,
+  .proyect h3 {
     padding-top: 20px;
     font-size: 1.4em;
   }
 
-  .main-conocimiento p {
+  .main-knowledge p {
     display: none;
   }
 
   .wrapper-quote {
     display: flex;
     align-items: center;
+    
   }
 
+
   .wrapper-quote q {
-    line-height: 120%;
+    line-height: 110%;
+    width:88vw;
   }
 
   .footer-wrap {
@@ -534,7 +552,7 @@ span {
 
   .main,
   .wrapper-quote,
-  .proyectos,
+  .proyect,
   .form-wrapper {
     padding-bottom: 100px;
   }
